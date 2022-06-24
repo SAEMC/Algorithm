@@ -54,11 +54,8 @@ if __name__ == "__main__":
         stack.push(i)
 
     stack._printList()
-
-    print(f"스택 크기: {stack.size()}")
     print(f"peek: {stack.peek()}")
     print(f"pop: {stack.pop()}")
     print(f"peek: {stack.peek()}")
     print(f"스택이 비었나요? {stack.isEmpty()}")
-
     stack._printList()
