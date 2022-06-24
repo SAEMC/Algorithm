@@ -11,7 +11,7 @@ class Queue(object):
         return not (bool(self.in_stack) or bool(self.out_stack))
 
     def enqueue(self, item):
-        return self.in_stack.append(item)
+        self.in_stack.append(item)
 
     def dequeue(self):
         if not self.out_stack:
