@@ -1,9 +1,5 @@
 export class Stack {
-  items: Array<any>;
-
-  constructor() {
-    this.items = [];
-  }
+  constructor(public items: Array<any> = []) {}
 
   isEmpty(): boolean {
     return !Boolean(this.items.length);
