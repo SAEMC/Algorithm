@@ -10,9 +10,9 @@ export class Stack {
   }
 
   pop(): any | void {
-    const value = this.items.pop();
+    const value: any = this.items.pop();
 
-    if (value) {
+    if (typeof value !== undefined) {
       return value;
     } else {
       console.log("Stack is empty.");
@@ -32,7 +32,7 @@ export class Stack {
   }
 }
 
-const stack = new Stack();
+const stack: Stack = new Stack();
 
 console.log(`스택이 비었나요? ${stack.isEmpty()}`);
 console.log(`스택에 숫자 0~9를 추가합니다.`);
