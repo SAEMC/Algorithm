@@ -54,7 +54,7 @@ export class Stack {
   }
 }
 
-const stack = new Stack();
+const stack: Stack = new Stack();
 
 console.log(`스택이 비었나요? ${stack.isEmpty()}`);
 console.log("스택에 숫자 0~9를 추가합니다.");
