@@ -30,6 +30,10 @@ export class Stack {
       console.log("Stack is empty.");
     }
   }
+
+  print(): Array<any> {
+    return this.items;
+  }
 }
 
 const stack: Stack = new Stack();
@@ -46,4 +50,4 @@ console.log(`peek: ${stack.peek()}`);
 console.log(`pop: ${stack.pop()}`);
 console.log(`peek: ${stack.peek()}`);
 console.log(`스택이 비었나요? ${stack.isEmpty()}`);
-console.log(stack.items);
+console.log(stack.print());
