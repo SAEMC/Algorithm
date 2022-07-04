@@ -5,7 +5,7 @@ class Deque(Queue):
     def enqueue_back(self, item):
         self.items.append(item)
 
-    def dequeue(self):
+    def dequeue_front(self):
         value = self.items.pop(0)
 
         if value is not None:
@@ -27,3 +27,14 @@ if __name__ == "__main__":
     print(f"peek: {deque.peek()}")
     print(f"dequeue: {deque.dequeue()}")
     print(f"데크가 비었나요? {deque.isEmpty()}")
+    print()
+    print(f"데크: {deque}")
+    print(f"dequeue: {deque.dequeue_front()}")
+    print(f"peek: {deque.peek()}")
+    print(f"데크: {deque}")
+    print("enqueue_back(50)을 수행합니다.")
+
+    deque.enqueue_back(50)
+
+    print(f"peek: {deque.peek()}")
+    print(f"데크: {deque}")
