@@ -24,3 +24,6 @@ if __name__ == "__main__":
         deque.enqueue(i)
 
     print(f"데크 크기: {deque.size()}")
+    print(f"peek: {deque.peek()}")
+    print(f"dequeue: {deque.dequeue()}")
+    print(f"데크가 비었나요? {deque.isEmpty()}")
